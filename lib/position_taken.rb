@@ -4,7 +4,10 @@ board = ["X"," "," "," "," "," "," "," "," "]
 
 def position_taken?(board, index)
   #! board[index] == " " && board[index] == "" && board[index] == nil
-  if board
+  if board[index] == " " && board[index] == "" && board[index] == nil
+    true
+  else
+    false
 end
 
 puts position_taken?(board, 0)
